@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #D4AF37;
+    --secondary-color: #1A1A1A;
+    --bg-light: #F8F9FA;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Outfit', sans-serif;
+}
+
+.page-header {
+    background: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+.quick-action-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: var(--transition-smooth);
+    height: 100%;
+}
+
+.quick-action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.action-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: none;
+    overflow: hidden;
+}
+
+.profile-card .card-header {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 20px 30px;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
